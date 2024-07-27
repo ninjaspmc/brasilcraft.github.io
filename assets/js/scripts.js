@@ -21,7 +21,7 @@ ip.addEventListener('click', function () {
 //
 //  STATUS DO SERVIDOR
 //
-$.getJSON('https://api.mcsrvstat.us/bedrock/3/' + ip.innerText + ':10095', function(data) {
+$.getJSON('https://api.mcsrvstat.us/bedrock/3/' + 'brasilcraft.ninjaspmc.com.br' + ':10095', function(data) {
   if (!data.online) {
     $('#status').html('<i class="fas fa-times"></i> Servidor offline');
     $('#motd').html('-');
