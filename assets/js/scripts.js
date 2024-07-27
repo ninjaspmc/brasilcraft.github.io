@@ -21,14 +21,14 @@ ip.addEventListener('click', function () {
 //
 //  STATUS DO SERVIDOR
 //
-$.getJSON('https://api.minetools.eu/ping/' + ip.innerText + '/25565', function(data) {
-  if (data.error) {
+$.getJSON('https://api.mcsrvstat.us/bedrock/3/' + ip.innerText + ':' + '10095', function(data) {
+  if (!data.online) {
     $('#status').html('<i class="fas fa-times"></i> Servidor offline');
     $('#motd').html('-');
     $('#online').html('-');
   } else {
     $('#status').html('<i class="fas fa-check"></i> Servidor online');
-    $('#motd').html(data.description.replace(/§(.+?)/gi, ''));
+    $('#motd').html(data.motd.html[0]);
     $('#online').html(data.players.online);
   }
 });
