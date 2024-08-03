@@ -4,7 +4,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    min-height: 100vh;
     margin: 0;
     background-color: white;
     color: black;
@@ -24,7 +24,7 @@ body {
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    background: url('https://telegra.ph/file/64a9885faa8fa94c3e881.jpg') no-repeat center/cover;
+    background: url('your-image-url.jpg') no-repeat center/cover;
     margin-bottom: 20px;
 }
 
@@ -45,7 +45,26 @@ body {
     text-decoration: none;
 }
 
-.theme-toggle {
+.instructions {
+    text-align: left;
     margin-top: 20px;
+}
+
+.theme-icon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
     cursor: pointer;
+}
+
+footer {
+    position: fixed;
+    bottom: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+.theme-icon img {
+    width: 30px;
+    height: 30px;
 }
