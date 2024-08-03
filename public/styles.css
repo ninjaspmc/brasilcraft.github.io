@@ -18,40 +18,27 @@ body {
 
 .container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    text-align: left;
-    max-width: 80%;
-}
-
-.left-section {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-}
-
-.right-section {
-    flex: 2;
-    margin-left: 20px;
+    text-align: center;
 }
 
 .circle-image {
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    background: url('https://telegra.ph/file/64a9885faa8fa94c3e881.jpg') no-repeat center/cover;
+    background: url('/your-image-url.jpg') no-repeat center/cover;
     margin-bottom: 20px;
 }
 
 .title {
     font-size: 2em;
     margin-bottom: 20px;
-    text-align: center;
 }
 
 .button {
-    display: block;
+    display: inline-block;
     padding: 10px 20px;
     font-size: 1.2em;
     color: white;
@@ -59,13 +46,15 @@ body {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    margin: 20px auto;
+    margin: 20px 0;
     text-decoration: none;
     text-align: center;
 }
 
 .instructions {
     margin-top: 20px;
+    text-align: left;
+    max-width: 80%;
 }
 
 .copy-text {
