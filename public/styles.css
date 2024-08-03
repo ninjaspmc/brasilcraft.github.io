@@ -6,6 +6,7 @@ body {
     justify-content: center;
     min-height: 100vh;
     margin: 0;
+    padding-bottom: 50px
     background-color: white;
     color: black;
     transition: all 0.3s ease-in-out;
@@ -28,7 +29,7 @@ body {
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    background: url('/logo-brasilcraft.png') no-repeat center/cover;
+    background: url('https://telegra.ph/file/64a9885faa8fa94c3e881.jpg') no-repeat center/cover;
     margin-bottom: 20px;
 }
 
@@ -72,12 +73,12 @@ body {
 }
 
 footer {
-    position: fixed;
+    position: relative;
     bottom: 0;
     width: 100%;
     background-color: grey;
     text-align: center;
-    padding: 10px 0;
+    padding: 20px 0;
 }
 
 .theme-icon img {
