@@ -21,7 +21,7 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    text-align: center;
+    text-align: left;
     max-width: 80%;
 }
 
@@ -33,7 +33,6 @@ body {
 
 .right-section {
     flex: 2;
-    text-align: left;
     margin-left: 20px;
 }
 
@@ -41,16 +40,18 @@ body {
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    background: url('your-image-url.jpg') no-repeat center/cover;
+    background: url('https://telegra.ph/file/64a9885faa8fa94c3e881.jpg') no-repeat center/cover;
     margin-bottom: 20px;
 }
 
 .title {
     font-size: 2em;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 .button {
+    display: block;
     padding: 10px 20px;
     font-size: 1.2em;
     color: white;
@@ -58,8 +59,9 @@ body {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    margin-bottom: 20px;
+    margin: 20px auto;
     text-decoration: none;
+    text-align: center;
 }
 
 .instructions {
