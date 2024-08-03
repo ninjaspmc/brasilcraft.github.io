@@ -24,7 +24,7 @@ body {
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    background: url('your-image-url.jpg') no-repeat center/cover;
+    background: url('https://telegra.ph/file/64a9885faa8fa94c3e881.jpg') no-repeat center/cover;
     margin-bottom: 20px;
 }
 
@@ -46,7 +46,7 @@ body {
 }
 
 .instructions {
-    text-align: left;
+    text-align: center;
     margin-top: 20px;
 }
 
