@@ -4,18 +4,130 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BrasilCraft</title>
-    <link rel="stylesheet" href="/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="/public/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/public/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/public/favicon-16x16.png">
+<link rel="manifest" href="/public/site.webmanifest">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: white;
+            color: #333;
+            transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+        }
+
+        .dark-theme {
+            background-color: #121212;
+            color: #f1f1f1;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 20px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            background-color: white;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .dark-theme .container {
+            background-color: #1e1e1e;
+        }
+
+        .circle-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background: url('https://telegra.ph/file/64a9885faa8fa94c3e881.jpg') no-repeat center/cover;
+            margin-bottom: 20px;
+        }
+
+        .title {
+            font-size: 2.5em;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 12px 25px;
+            font-size: 1.2em;
+            color: white;
+            background-color: #4CAF50;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            margin: 20px 0;
+            text-decoration: none;
+            text-align: center;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .button:hover {
+            background-color: #45a049;
+        }
+
+        .instructions {
+            margin-top: 20px;
+            text-align: center;
+            max-width: 80%;
+        }
+
+        .copy-text {
+            cursor: pointer;
+            color: #007BFF;
+            text-decoration: underline;
+            font-weight: 600;
+        }
+
+        .copy-text:hover {
+            color: #0056b3;
+        }
+
+        .theme-icon {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            cursor: pointer;
+        }
+
+        footer {
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            background-color: #333;
+            text-align: center;
+            padding: 20px 0;
+            color: white;
+        }
+
+        .theme-icon img {
+            width: 30px;
+            height: 30px;
+        }
+    </style>
 </head>
 <body>
     <div class="theme-icon" onclick="toggleTheme()">
         <img id="theme-icon" src="/day-icon.png" alt="Toggle Theme">
     </div>
     <div class="container">
-        <div class="circle-image" style="background-image: url('/path/to/your/image.jpg');"></div>
+        <div class="circle-image" style="background-image: url('https://telegra.ph/file/64a9885faa8fa94c3e881.jpg');"></div>
         <div class="title">BrasilCraft</div>
-        <a class="button" href="minecraft://?addExternalServer=BrasilCraft|brasilcraft.ninjaspmc.com.br:19048">Jogar</a>
+        <a class="button" href="minecraft://?addExternalServer=BrasilCraft|brasilcraft.ninjaspmc.com.br:19048">Adicionar</a>
         <div class="instructions">
-            <p>1. Abra o Minecraft.</p>
+            <p>1. Abra o Minecraft: Bedrock Edition.</p>
             <p>2. Clique em "Jogar" e vá para a aba "Servidores".</p>
             <p>3. Role até "Servidores adicionais" e clique em "Adicionar servidor".</p>
             <p>4. Insira as informações fornecidas abaixo ou clique no botão acima para adicionar automaticamente.</p>
