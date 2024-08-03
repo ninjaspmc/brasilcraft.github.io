@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: white;
+    color: black;
+    transition: all 0.3s ease-in-out;
+}
+
+.dark-theme {
+    background-color: #121212;
+    color: white;
+}
+
+.container {
+    text-align: center;
+}
+
+.circle-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: url('https://telegra.ph/file/64a9885faa8fa94c3e881.jpg') no-repeat center/cover;
+    margin-bottom: 20px;
+}
+
+.title {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.button {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    color: white;
+    background-color: green;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    text-decoration: none;
+}
+
+.theme-toggle {
+    margin-top: 20px;
+    cursor: pointer;
+}
